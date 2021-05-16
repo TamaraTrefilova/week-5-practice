@@ -30,7 +30,9 @@ function App() {
             <h1>Home</h1>
           </Route>
           <Route exact path='/github/search' component ={GithubUserSearch} />
-          <Route path='/github/users/:username' component={GithubUser}  />                   
+          <Route path='/github/users/:username'>                   
+          <GithubUser/>
+          </Route>
         </Switch>
 
       </Router>

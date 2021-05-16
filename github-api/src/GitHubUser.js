@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from "react-router";
 
 class GithubUser extends Component {
     state = {
@@ -98,4 +99,4 @@ componentDidUpdate(prevProps){
 
 }
 
-export default GithubUser;
+export default withRouter(GithubUser);
